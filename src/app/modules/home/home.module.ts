@@ -4,7 +4,7 @@ import { HomeComponent } from '@modules/home/pages/home/home.component';
 import { SharedModule } from '@app/shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { JobOffersComponent } from './pages/job-offers/job-offers.component';
-import { JobOfferCardComponent } from './components/job-offer-card/job-offer-card.component';
+import { JobOfferCardComponent, JobPreviewCardComponent } from './components';
 
 
 
@@ -12,7 +12,8 @@ import { JobOfferCardComponent } from './components/job-offer-card/job-offer-car
   declarations: [
     HomeComponent,
     JobOffersComponent,
-    JobOfferCardComponent
+    JobOfferCardComponent,
+    JobPreviewCardComponent
   ],
   imports: [
     CommonModule,
