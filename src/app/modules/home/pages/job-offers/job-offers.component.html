@@ -1,15 +1,22 @@
 <div class="job__offers">
     <div class="job__offers__container container mx-auto">
-        <div class="job__offers__wrapper relative flex items-start gap-5 w-full px-8">
-            <div class="job__offers__cards space-x-2 w-1/2">
-                <app-job-offer-card></app-job-offer-card>
-                <app-job-offer-card></app-job-offer-card>
-                <app-job-offer-card></app-job-offer-card>
-                <app-job-offer-card></app-job-offer-card>
-                <app-job-offer-card></app-job-offer-card>
+        <div class="job__offers__wrapper relative px-8">
+            <div class="job_offers__filters">
+                <div class="job__offers__search__bar">
+                    <app-search-bar></app-search-bar>
+                </div>
             </div>
-            <div class="job__offers__card__preview sticky top-10 w-1/2">
-                <app-job-preview-card></app-job-preview-card>
+            <div class="job__offers__cards__preview flex items-start gap-5 w-full">
+                <div class="job__offers__cards space-x-2 w-1/2">
+                    <app-job-offer-card></app-job-offer-card>
+                    <app-job-offer-card></app-job-offer-card>
+                    <app-job-offer-card></app-job-offer-card>
+                    <app-job-offer-card></app-job-offer-card>
+                    <app-job-offer-card></app-job-offer-card>
+                </div>
+                <div class="job__offers__card__preview sticky top-10 w-1/2">
+                    <app-job-preview-card></app-job-preview-card>
+                </div>
             </div>
         </div>
     </div>
