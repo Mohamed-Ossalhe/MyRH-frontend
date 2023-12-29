@@ -1,14 +1,16 @@
 <div class="job__offers">
     <div class="job__offers__container container mx-auto">
-        <div class="job__offers__wrapper flex items-center gap-5 px-8">
-            <div class="job__offers__cards space-x-2">
+        <div class="job__offers__wrapper relative flex items-start gap-5 w-full px-8">
+            <div class="job__offers__cards space-x-2 w-1/2">
                 <app-job-offer-card></app-job-offer-card>
                 <app-job-offer-card></app-job-offer-card>
                 <app-job-offer-card></app-job-offer-card>
                 <app-job-offer-card></app-job-offer-card>
                 <app-job-offer-card></app-job-offer-card>
             </div>
-            <div class="job__offers__card__preview"></div>
+            <div class="job__offers__card__preview sticky top-10 w-1/2">
+                <app-job-preview-card></app-job-preview-card>
+            </div>
         </div>
     </div>
 </div>
