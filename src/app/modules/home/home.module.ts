@@ -5,6 +5,7 @@ import { SharedModule } from '@app/shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { JobOffersComponent } from './pages/job-offers/job-offers.component';
 import { JobOfferCardComponent, JobPreviewCardComponent, JobOffersSearchComponent } from './components';
+import { JobOffersFiltersComponent } from './components/job-offers-filters/job-offers-filters.component';
 
 
 
@@ -14,7 +15,8 @@ import { JobOfferCardComponent, JobPreviewCardComponent, JobOffersSearchComponen
     JobOffersComponent,
     JobOfferCardComponent,
     JobPreviewCardComponent,
-    JobOffersSearchComponent
+    JobOffersSearchComponent,
+    JobOffersFiltersComponent
   ],
   imports: [
     CommonModule,
