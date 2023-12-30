@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NavbarComponent, SearchBarComponent, ButtonComponent } from '@components/index';
+import { NavbarComponent, SearchBarComponent, ButtonComponent, SelectComponent } from '@components/index';
 
 
 
@@ -8,7 +8,8 @@ import { NavbarComponent, SearchBarComponent, ButtonComponent } from '@component
   declarations: [
     NavbarComponent,
     SearchBarComponent,
-    ButtonComponent
+    ButtonComponent,
+    SelectComponent
   ],
   imports: [
     CommonModule
@@ -16,7 +17,8 @@ import { NavbarComponent, SearchBarComponent, ButtonComponent } from '@component
   exports: [
     NavbarComponent,
     SearchBarComponent,
-    ButtonComponent
+    ButtonComponent,
+    SelectComponent
   ]
 })
 export class SharedModule { }

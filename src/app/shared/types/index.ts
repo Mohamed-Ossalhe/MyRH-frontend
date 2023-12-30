@@ -1,0 +1,1 @@
+export type selectData = { value: string, label: string };
