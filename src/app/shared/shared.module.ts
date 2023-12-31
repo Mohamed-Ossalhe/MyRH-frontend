@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavbarComponent, SearchBarComponent, ButtonComponent, SelectComponent } from '@components/index';
 import { RouterModule } from '@angular/router';
+import { InputComponent } from './components/input/input.component';
 
 
 
@@ -10,7 +11,8 @@ import { RouterModule } from '@angular/router';
     NavbarComponent,
     SearchBarComponent,
     ButtonComponent,
-    SelectComponent
+    SelectComponent,
+    InputComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,8 @@ import { RouterModule } from '@angular/router';
     NavbarComponent,
     SearchBarComponent,
     ButtonComponent,
-    SelectComponent
+    SelectComponent,
+    InputComponent
   ]
 })
 export class SharedModule { }
