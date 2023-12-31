@@ -3,7 +3,9 @@
         <div class="navbar__wrapper flex items-center justify-between px-8 py-8">
             <div class="navbar__left__wrapper flex items-center justify-between gap-10">
                 <div class="navbar__logo">
-                    <h1 class="text-blue-500 font-bold">MyRH</h1>
+                    <a routerLink="/">
+                        <img class="h-10" [src]="logo" alt="MyRH recruitement">
+                    </a>
                 </div>
                 <div class="navbar__navigation">
                     <ul class="navbar__navigation__menu flex items-center gap-5">
@@ -14,7 +16,7 @@
             </div>
             <div class="navbar__right__wrapper">
                 <div class="navbar__auth__navigation">
-                    <a href="#" class="capitalize">sign in</a>
+                    <a routerLink="/auth" class="capitalize">sign in</a>
                 </div>
                 <div class="navbar__info hidden">hello</div>
             </div>

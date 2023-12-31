@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ModulesRoutingModule } from './modules-routing.module';
 import { SharedModule } from '@shared/shared.module';
 import { HomeModule } from '@modules/home/home.module';
+import { AuthModule } from './auth/auth.module';
 
 
 
@@ -12,7 +13,8 @@ import { HomeModule } from '@modules/home/home.module';
     CommonModule,
     ModulesRoutingModule,
     SharedModule,
-    HomeModule
+    HomeModule,
+    AuthModule
   ]
 })
 export class ModulesModule { }

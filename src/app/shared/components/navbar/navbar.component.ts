@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.less']
 })
 export class NavbarComponent {
-
+  logo: string = "../../../../assets/img/logo.png";
 }
