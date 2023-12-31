@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavbarComponent, SearchBarComponent, ButtonComponent, SelectComponent } from '@components/index';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -12,7 +13,8 @@ import { NavbarComponent, SearchBarComponent, ButtonComponent, SelectComponent }
     SelectComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     NavbarComponent,
