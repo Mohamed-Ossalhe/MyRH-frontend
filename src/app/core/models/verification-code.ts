@@ -1,12 +1,12 @@
 export class VerificationCode {
-    public id?: string;
+    public id?: string | null;
     public code: string;
-    public expiration: Date;
+    public expiration?: Date | null;
 
     constructor(
         code: string,
-        expiration: Date,
-        id?: string
+        expiration?: Date | null,
+        id?: string | null
     ) {
         this.code = code;
         this.expiration = expiration;
