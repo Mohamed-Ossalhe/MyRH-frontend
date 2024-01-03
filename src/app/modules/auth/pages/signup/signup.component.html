@@ -5,13 +5,20 @@
                 <h1 class="mb-2 text-xl text-[#2D2D2D] font-bold">Ready to take the next step?</h1>
                 <span class="text-base text-[#595959]">Create an account or sign in.</span>
             </div>
-            <div class="signup__inputs flex flex-col gap-6">
-                <app-input [input]="emailInput"></app-input>
-                <div class="submit__btn">
-                    <app-button>
-                        Continue <i class='bx bx-right-arrow-alt text-lg'></i>
-                    </app-button>
-                </div>
+            <div class="signup__inputs">
+                <form class="grid grid-cols-2 gap-6">
+                    <app-input [input]="formInputs.name"></app-input>
+                    <app-input [input]="formInputs.email"></app-input>
+                    <app-input [input]="formInputs.password"></app-input>
+                    <app-input [input]="formInputs.phone"></app-input>
+                    <app-input [input]="formInputs.address"></app-input>
+                    <app-input [input]="formInputs.file" (changeEvent)="uploadFile($event)"></app-input>
+                    <div class="submit__btn col-span-2">
+                        <app-button [clickEvent]="signUp">
+                            Continue <i class='bx bx-right-arrow-alt text-lg'></i>
+                        </app-button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
