@@ -4,6 +4,7 @@ import { ModulesRoutingModule } from './modules-routing.module';
 import { SharedModule } from '@shared/shared.module';
 import { HomeModule } from '@modules/home/home.module';
 import { AuthModule } from './auth/auth.module';
+import { RecruiterModule } from './recruiter/recruiter.module';
 
 
 
@@ -14,7 +15,8 @@ import { AuthModule } from './auth/auth.module';
     ModulesRoutingModule,
     SharedModule,
     HomeModule,
-    AuthModule
+    AuthModule,
+    RecruiterModule
   ]
 })
 export class ModulesModule { }

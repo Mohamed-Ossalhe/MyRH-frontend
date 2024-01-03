@@ -11,7 +11,7 @@ export class JobOffer {
     public educationalLevel: string;
     public salary: number;
     public status: OfferStatus;
-    public recruiter: Recruiter;
+    public recruiter: string;
     public applications: Application[];
 
     constructor(
@@ -22,7 +22,7 @@ export class JobOffer {
         educationalLevel: string,
         salary: number,
         status: OfferStatus,
-        recruiter: Recruiter,
+        recruiter: string,
         applications: Application[],
         id?: string
     ) {

@@ -14,3 +14,8 @@ export type InputType = {
     onChange: any,
     required: boolean
 };
+
+export type Table = [
+    theads: [],
+    tbody: []
+]
