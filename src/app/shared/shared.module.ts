@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NavbarComponent, SearchBarComponent, ButtonComponent, SelectComponent } from '@components/index';
+import { NavbarComponent, SearchBarComponent, ButtonComponent, SelectComponent, InputComponent } from '@components/index';
 import { RouterModule } from '@angular/router';
-import { InputComponent } from './components/input/input.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -16,7 +17,10 @@ import { InputComponent } from './components/input/input.component';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     NavbarComponent,

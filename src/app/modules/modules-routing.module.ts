@@ -4,6 +4,7 @@ import { HomeComponent } from "@modules/home/pages/home/home.component";
 import { JobOffersComponent } from "@modules/home/pages/job-offers/job-offers.component";
 import { AuthComponent } from "@modules/auth/pages/auth/auth.component";
 import { SignupComponent } from "@modules/auth/pages/signup/signup.component";
+import { VerifyCodeComponent } from "./auth/pages/verify-code/verify-code.component";
 
 const moduleRoutes: Routes = [
     {
@@ -23,6 +24,10 @@ const moduleRoutes: Routes = [
             {
                 path: "",
                 component: SignupComponent
+            },
+            {
+                path: "verify",
+                component: VerifyCodeComponent
             }
         ]
     }
