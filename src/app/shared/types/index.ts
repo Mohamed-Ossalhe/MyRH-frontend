@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-export type selectData = { value: string, label: string };
-=======
 export type SelectData = { 
     value: string, 
     label: string
@@ -22,4 +19,3 @@ export type Table = [
     theads: [],
     tbody: []
 ]
->>>>>>> Stashed changes

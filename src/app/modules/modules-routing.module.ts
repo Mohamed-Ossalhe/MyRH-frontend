@@ -2,8 +2,6 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { HomeComponent } from "@modules/home/pages/home/home.component";
 import { JobOffersComponent } from "@modules/home/pages/job-offers/job-offers.component";
-<<<<<<< Updated upstream
-=======
 import { AuthComponent } from "@modules/auth/pages/auth/auth.component";
 import { SignupComponent } from "@modules/auth/pages/signup/signup.component";
 import { VerifyCodeComponent } from "./auth/pages/verify-code/verify-code.component";
@@ -12,7 +10,6 @@ import { JobsComponent } from "./recruiter/pages/jobs/jobs.component";
 import { ApplicationsComponent } from "./recruiter/pages/applications/applications.component";
 import { CreateJobComponent } from "./recruiter/pages/create-job/create-job.component";
 import { JobsListComponent } from "./recruiter/pages/jobs-list/jobs-list.component";
->>>>>>> Stashed changes
 
 const moduleRoutes: Routes = [
     {
@@ -24,8 +21,6 @@ const moduleRoutes: Routes = [
                 component: JobOffersComponent
             }
         ]
-<<<<<<< Updated upstream
-=======
     },
     {
         path: "auth",
@@ -64,7 +59,6 @@ const moduleRoutes: Routes = [
                 component: ApplicationsComponent
             }
         ]
->>>>>>> Stashed changes
     }
 ];
 

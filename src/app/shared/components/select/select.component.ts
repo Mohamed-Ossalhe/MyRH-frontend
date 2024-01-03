@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { selectData } from '@shared/types';
+import { SelectData } from '@shared/types';
 
 @Component({
   selector: 'app-select',
@@ -7,5 +7,5 @@ import { selectData } from '@shared/types';
   styleUrls: ['./select.component.less']
 })
 export class SelectComponent {
-  @Input() data!: selectData[];
+  @Input() data!: SelectData[];
 }
