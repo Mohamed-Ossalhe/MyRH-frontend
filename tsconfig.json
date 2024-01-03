@@ -25,6 +25,8 @@
     ],
     "paths": {
       "@app/*": ["app/*"],
+      //assets
+      "@assets/*": ["assets/*"],
       "@modules/*": ["app/modules/*"],
       // core
       "@core/*": ["app/core/*"],
