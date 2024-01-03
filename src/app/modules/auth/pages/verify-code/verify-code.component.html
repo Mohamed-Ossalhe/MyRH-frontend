@@ -8,7 +8,7 @@
             <div class="verify__inputs flex flex-col gap-6">
                 <app-input [input]="verifyInput"></app-input>
                 <div class="submit__btn">
-                    <app-button>
+                    <app-button [clickEvent]="submitForm">
                         Continue <i class='bx bx-right-arrow-alt text-lg'></i>
                     </app-button>
                 </div>
