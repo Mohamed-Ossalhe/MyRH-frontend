@@ -10,6 +10,7 @@ import { JobsComponent } from "./recruiter/pages/jobs/jobs.component";
 import { ApplicationsComponent } from "./recruiter/pages/applications/applications.component";
 import { CreateJobComponent } from "./recruiter/pages/create-job/create-job.component";
 import { JobsListComponent } from "./recruiter/pages/jobs-list/jobs-list.component";
+import { ApplyPageComponent } from "./home/pages/apply-page/apply-page.component";
 
 const moduleRoutes: Routes = [
     {
@@ -19,6 +20,14 @@ const moduleRoutes: Routes = [
             {
                 path: "",
                 component: JobOffersComponent
+            },
+            {
+                path: "job-offers/:id",
+                component: JobOffersComponent,
+            },
+            {
+                path: 'job-offers/:id/apply',
+                component: ApplyPageComponent
             }
         ]
     },

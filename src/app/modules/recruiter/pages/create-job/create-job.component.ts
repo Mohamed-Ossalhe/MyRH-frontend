@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { OfferStatus } from '@app/core/enums/offer-status';
 import { JobOffer } from '@app/core/models/job-offer';
 import { JobOfferService } from '@shared/services/job-offer/job-offer.service';
@@ -10,7 +11,7 @@ import { JobOfferService } from '@shared/services/job-offer/job-offer.service';
 })
 export class CreateJobComponent {
   
-  constructor(private _jobOfferService: JobOfferService) {}
+  constructor(private _jobOfferService: JobOfferService, private _router: Router) {}
 
   formInputs = {
     title: {
@@ -82,13 +83,6 @@ export class CreateJobComponent {
   }
 
   submitJob = () => {
-    // let formData: FormData = new FormData();
-    // formData.append("title", this.formInputs.title.value);
-    // formData.append("description", this.formInputs.description.value);
-    // formData.append("profile", this.formInputs.profile.value);
-    // formData.append("address", this.formInputs.address.value);
-    // formData.append("educationalLevel", this.formInputs.educLevel.value);
-    // formData.append("salary", this.formInputs.salary.value);
     const jobOffer: JobOffer = new JobOffer(
       this.formInputs.title.value, 
       this.formInputs.description.value, 
@@ -97,13 +91,14 @@ export class CreateJobComponent {
       this.formInputs.educLevel.value,
       parseInt(this.formInputs.salary.value),
       OfferStatus.PENDING,
-      "56ad0816-b055-481d-902f-cbce23400c75",
+      JSON.parse((localStorage.getItem("recruiter") as string)),
       []
       );
 
     this._jobOfferService.create(jobOffer).subscribe({
       next: (res) => {
         console.log(res);
+        this._router.navigate(["/recruiter/jobs"]);
       },
       error: (error) => {
         console.log(error);

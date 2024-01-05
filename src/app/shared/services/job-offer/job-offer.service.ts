@@ -11,7 +11,15 @@ export class JobOfferService {
 
   constructor(private _http: HttpClient) { }
 
-  public create(body: JobOffer) {
+  public readAll(): Observable<JobOffer[]> {
+    return this._http.get<JobOffer[]>(`${environment.API_URL}/joboffers`);
+  }
+
+  public readOne(id: string): Observable<JobOffer> {
+    return this._http.get<JobOffer>(`${environment.API_URL}/joboffers/${id}`);
+  }
+
+  public create(body: JobOffer): Observable<JobOffer> {
     return this._http.post<JobOffer>(`${environment.API_URL}/joboffers/create`, body);
   }
 }

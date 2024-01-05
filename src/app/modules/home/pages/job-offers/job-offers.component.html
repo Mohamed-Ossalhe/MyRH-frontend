@@ -8,15 +8,16 @@
                 </div>
             </div>
             <div class="job__offers__cards__preview flex items-start gap-5 w-full">
-                <div class="job__offers__cards space-x-2 w-full md:w-1/2">
-                    <app-job-offer-card></app-job-offer-card>
-                    <app-job-offer-card></app-job-offer-card>
-                    <app-job-offer-card></app-job-offer-card>
-                    <app-job-offer-card></app-job-offer-card>
-                    <app-job-offer-card></app-job-offer-card>
+                <div class="job__offers__cards w-full md:w-1/2">
+                    <div class="space-x-2" *ngIf="jobOffers">
+                        <app-job-offer-card *ngFor="let offer of jobOffers" [offer]="offer"></app-job-offer-card>
+                    </div>
+                    <div *ngIf="!jobOffers">
+                        No Offers available
+                    </div>
                 </div>
                 <div class="job__offers__card__preview hidden md:block sticky top-10 w-1/2">
-                    <app-job-preview-card></app-job-preview-card>
+                    <app-job-preview-card *ngIf="jobOffer" [offer]="jobOffer"></app-job-preview-card>
                 </div>
             </div>
         </div>

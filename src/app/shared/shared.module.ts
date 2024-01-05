@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NavbarComponent, SearchBarComponent, ButtonComponent, SelectComponent } from '@components/index';
-import { NavbarComponent, SearchBarComponent, ButtonComponent, SelectComponent, InputComponent, TableComponent } from '@components/index';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NavbarComponent, SearchBarComponent, ButtonComponent, SelectComponent, InputComponent, TableComponent } from '@components/index';
+import { PaginationComponent } from './components/pagination/pagination.component';
 
 
 
@@ -15,7 +15,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ButtonComponent,
     SelectComponent,
     InputComponent,
-    TableComponent
+    TableComponent,
+    PaginationComponent
   ],
   imports: [
     CommonModule,

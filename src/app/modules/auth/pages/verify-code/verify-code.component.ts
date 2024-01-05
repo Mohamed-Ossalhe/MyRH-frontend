@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { VerificationCode } from '@app/core/models/verification-code';
 import { RecruiterService } from '@app/shared/services';
 import { InputType } from '@app/shared/types';
@@ -10,7 +11,7 @@ import { InputType } from '@app/shared/types';
 })
 export class VerifyCodeComponent {
 
-  constructor(private _recruiterService: RecruiterService) {}
+  constructor(private _recruiterService: RecruiterService, private _router: Router) {}
 
   verifyInput: InputType = {
     id: 'code',
@@ -29,7 +30,8 @@ export class VerifyCodeComponent {
     this._recruiterService.verifyAccount(verificatioCode).subscribe({
       next: (res) => {
         console.log(res);
-        
+        localStorage.setItem("recruiter", JSON.stringify(res.id));
+        this._router.navigate(["/recruiter/jobs"]);
       },
       error: (error) => {
         console.log(error);

@@ -4,7 +4,7 @@ import { User } from "./user";
 export class JobSeeker extends User {
 
     public identity: string;
-    public resume: string;
+    public resume: string |File;
     public applications: Application[];
 
     constructor(
@@ -12,7 +12,7 @@ export class JobSeeker extends User {
         email: string,
         phoneNumber: string,
         identity: string,
-        resume: string,
+        resume: string | File,
         applications: Application[],
         id?: string
     ) {

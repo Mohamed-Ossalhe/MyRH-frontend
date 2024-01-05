@@ -5,6 +5,8 @@ import { SharedModule } from '@app/shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { JobOffersComponent } from './pages/job-offers/job-offers.component';
 import { JobOfferCardComponent, JobPreviewCardComponent, JobOffersSearchComponent, JobOffersFiltersComponent } from './components';
+import { ApplyPageComponent } from '@modules/home/pages/apply-page/apply-page.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -15,12 +17,14 @@ import { JobOfferCardComponent, JobPreviewCardComponent, JobOffersSearchComponen
     JobOfferCardComponent,
     JobPreviewCardComponent,
     JobOffersSearchComponent,
-    JobOffersFiltersComponent
+    JobOffersFiltersComponent,
+    ApplyPageComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
-    SharedModule
+    SharedModule,
+    FormsModule
   ]
 })
 export class HomeModule { }
